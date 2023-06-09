@@ -1,9 +1,21 @@
+import java.util.Arrays;
+
 public class ArrReverse {
-    public static void main(String[] args){
-        int number[]=new int[]{4,5,6,7,8,9};
-        for(int i=number.length-1;i>0;i--){
-            System.out.print(+number[i]);
-        }
+    public static void main(String[] args) {
+        int[] num = {3, 4, 5, 6, 7, 8};
+        int i = 0;
+        int j = num.length - 1;
+        while (i < j) {
+            int k = num[i];
+            num[i] = num[j];
+            num[j] = k;
+            i++;
+            j--;
 
     }
+        System.out.println("smaller number is:" + Arrays.toString(num));
+
+           }
+
+
 }

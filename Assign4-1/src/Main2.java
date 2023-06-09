@@ -22,11 +22,11 @@ class Childclass extends Parentclass {
 public class Main2 {
     public static void main(String[] args) {
         // Create instances of ParentClass and ChildClass
-        Parentclass parent = new Parentclass(10);
+        Parentclass parent = new Parentclass(5);
         System.out.println("Parent Variable: " + parent.parentVariable);
-        Childclass child1 = new Childclass(20, 30);
+        Childclass child1 = new Childclass(10, 20);
         System.out.println("Child1 Variables: " + child1.parentVariable + ", " + child1.childVariable);
-        Childclass child2 = new Childclass(40);
+        Childclass child2 = new Childclass(20);
         System.out.println("Child2 Variables: " + child2.parentVariable + ", " + child2.childVariable);
 
 
