@@ -3,19 +3,19 @@ import java.util.Map;
 
 public class DistinctChar {
     public static void main(String[] args) {
-        String input = "test string";
-        printDistinctCharacters(input);
+        String s = "test string";
+        DistinctChar(s);
     }
 
-    public static void printDistinctCharacters(String str) {
-        Map<Character, Integer> charCountMap = new HashMap<>();
+    public static void DistinctChar(String str) {
+        Map<Character, Integer> Count = new HashMap<>();
 
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            charCountMap.put(c, charCountMap.getOrDefault(c, 0) + 1);
+            Count.put(c, Count.getOrDefault(c, 0) + 1);
         }
 
-        for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
+        for (Map.Entry<Character, Integer> entry : Count.entrySet()) {
             System.out.println(entry.getKey() + "-" + entry.getValue());
         }
     }
